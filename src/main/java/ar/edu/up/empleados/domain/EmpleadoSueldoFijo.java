@@ -1,7 +1,8 @@
-package Domain;
+package ar.edu.up.empleados.domain;
 
-import Domain.Empleado;
+import org.springframework.stereotype.Component;
 
+@Component
 public class EmpleadoSueldoFijo extends Empleado {
 
     public EmpleadoSueldoFijo(String nombre, String apellido, int edad, int salario) {

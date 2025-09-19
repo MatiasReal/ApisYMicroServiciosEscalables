@@ -1,4 +1,4 @@
-package Domain;
+package ar.edu.up.empleados.domain;
 
 public abstract class Empleado {
 

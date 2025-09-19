@@ -1,4 +1,4 @@
-package up.ProyectoMicroYApi.ProyectoMicroYApi;
+package ar.edu.up.empleados;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

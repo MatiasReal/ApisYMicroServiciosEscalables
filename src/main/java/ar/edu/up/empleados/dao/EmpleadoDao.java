@@ -1,11 +1,12 @@
-package DAO;
+package ar.edu.up.empleados.dao;
 
-import Domain.Empleado;
-import Domain.EmpleadoSueldoFijo;
-import Domain.EmpleadoSueldoHora;
+import ar.edu.up.empleados.domain.Empleado;
+import ar.edu.up.empleados.domain.EmpleadoSueldoFijo;
+import ar.edu.up.empleados.domain.EmpleadoSueldoHora;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public class EmpleadoDao {
 
     EmpleadoSueldoFijo empleadosFijo;
