@@ -1,5 +1,6 @@
 package DAO;
 
+import Domain.Empleado;
 import Domain.EmpleadoSueldoFijo;
 import Domain.EmpleadoSueldoHora;
 
@@ -15,10 +16,15 @@ public class EmpleadoDao {
 
     List <EmpleadoSueldoHora> empleadosSueldoHora;
 
-    public void guardarEmpleado(){
+    public void guardarEmpleado(Empleado empleado) {
 
-        //logica guardar empleados;
-
+        if (empleado instanceof EmpleadoSueldoFijo) {
+            empleadosSueldoFijo.add((EmpleadoSueldoFijo) empleado);
+        } else if (empleado instanceof EmpleadoSueldoHora) {
+            empleadosSueldoHora.add((EmpleadoSueldoHora) empleado);
+        } else {
+            throw new IllegalArgumentException("Tipo de empleado no soportado: " + empleado.getClass().getName());
+        }
 
     }
 
